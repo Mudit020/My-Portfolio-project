@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mudit Raj Gajpal — Portfolio</title>
+  <meta name="description" content="Portfolio of Mudit Raj Gajpal — projects, skills, and contact.">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Skip link -->
+  <a class="skip" href="#main">Skip to content</a>
+  <!-- Scroll Progress Bar -->
+  <div id="scrollIndicator"></div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a class="brand" href="#home">
+        <span class="brand-mark">MRG</span>
+        <span class="brand-text">Mudit Raj Gajpal</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home" data-nav>Home</a></li>
+          <li><a href="#about" data-nav>About</a></li>
+          <li><a href="#skills" data-nav>Skills</a></li>
+          <li><a href="#projects" data-nav>Projects</a></li>
+          <li><a href="#contact" data-nav>Contact</a></li>
+        </ul>
+
+        <a class="btn btn-resume" href="assets/resume.pdf" download>Download Resume</a>
+
+        <button id="mobileToggle" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-left reveal">
+        <canvas id="heroParticles" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;"></canvas>
+
+        <p class="eyebrow">Engineering Student • Android & Web</p>
+        <h1 class="hero-title">
+          Hi — I’m <span class="name gradient-text">Mudit Raj Gajpal</span>.
+        </h1>
+        <p class="hero-lead">
+          I build reliable, efficient solutions with clean code and polished UX.
+          <span id="typewriter" aria-hidden="true"></span><span class="cursor">|</span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn neon" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a class="social" href="https://github.com/Mudit020" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="social" href="https://www.linkedin.com/in/mudit-raj-gajpal-2b5b74290/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="social" href="mailto:muditraj004@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="profile-wrap" role="img" aria-label="Portrait or Avatar">
+          <div class="glow-ring"></div>
+          <i class="fa-solid fa-robot profile-icon"></i>
+        </div>
+        <aside class="mini-card">
+          <h4>Focus Areas</h4>
+          <ul>
+            <li>Android (kotlin)</li>
+            <li>Graphic Designing</li>
+            <li>AI & Embedded Systems</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Mudit</strong>, a B.Tech student passionate about building futuristic apps and web solutions.
+          </p>
+          <ul class="bullets">
+            <li>Android development (Kotlin) & some ML experiments</li>
+            <li>Frontend </li>
+            <li>Graphic designing </li>
+            <li>Working On New Ideas</li>
+          </ul>
+          <div class="about-actions">
+            <a class="btn neon" href="#projects">View Projects</a>
+            <a class="btn ghost" href="assets/resume.pdf" download>Get Resume</a>
+          </div>
+        </div>
+
+        <div class="about-media">
+          <div class="icons-grid">
+            <i class="fa-solid fa-code icon"></i>
+            <i class="fa-solid fa-robot icon"></i>
+            <i class="fa-solid fa-lightbulb icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-top"><strong>Frontend</strong><span class="val"> 50%</span></div>
+          <div class="bar"><div class="bar-fill" data-fill="50"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><strong>Graphic Designing</strong><span class="val"> 80%</span></div>
+          <div class="bar"><div class="bar-fill" data-fill="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><strong>Android</strong><span class="val"> 60%</span></div>
+          <div class="bar"><div class="bar-fill" data-fill="60"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><strong>Python</strong><span class="val"> 60%</span></div>
+          <div class="bar"><div class="bar-fill" data-fill="60"></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card" tabindex="0">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>Smart Resume Builder</h3>
+            <p>Easy to Build Any Resume for freshers by putting just simple details and Ready in pdf form  </p>
+            <div class="tags"><span>HTML</span><span>OpenCV</span><span>Java Script</span></div>
+            <div class="card-actions">
+              <a class="btn ghost small" href="https://github.com/Mudit020/Smart-Resume-Builder">Source</a>
+              <a class="btn neon small" href="#">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" tabindex="0">
+          <div class="card-media"></div>
+          <div class="card-body">
+            <h3>CarVilla</h3>
+            <p>Minimal Site to see About cars</p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+            <div class="card-actions">
+              <a class="btn ghost small" href="https://github.com/Mudit020/Car-villa-Website">Source</a>
+              <a class="btn neon small" href="#">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        
+      </div>
+    </section>
+
+     <section id="contact" class="section container reveal">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-lead">Have a role, idea, or internship? Fill out the form or email me directly.</p>
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="user_name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="user_email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn neon ripple">Send Message</button>
+          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-small">
+          <span class="brand-mark">MRG</span>
+          <div>
+            <div class="brand-name">Mudit Raj Gajpal</div>
+            <div class="brand-sub">Engineering Student • Software & Android</div>
+          </div>
+        </div>
+        <p class="small muted">Turning ideas into code, one line at a time.</p>
+        <p class="small muted">Made with ❤️ using modern web technologies</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="footer-socials">
+          <a href="https://github.com/Mudit020" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/mudit-raj-gajpal-2b5b74290/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:muditraj004@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+        <div class="footer-extra">
+          <small>© <span id="year"></span> Mudit. Designed for futuristic portfolios & internships.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div id="modalPreview"></div>
+      <a id="modalDemo" href="#" target="_blank" class="btn neon">Demo</a>
+    </div>
+  </div>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init("Wgw2cI6xgLTmmVNfR"); // Replace with your EmailJS public key
+  </script>
+
+  <!-- Main Script -->
+  <script src="assets/script.js"></script>
+
+  <!-- Contact Form JS -->
+  <script>
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        emailjs.sendForm('service_b9w11qv', 'template_09e3syu', this)
+        .then(() => {
+            status.innerText = "Message sent successfully!";
+            form.reset();
+        }, (err) => {
+            console.error('EmailJS error:', err);
+            status.innerText = "Failed to send message. Try again.";
+        });
+    });
+  </script>
+</body>
+</html>
