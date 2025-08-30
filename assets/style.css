@@ -208,4 +208,92 @@ a { text-decoration: none; color: inherit; }
   background: #222;
   border-radius: 12px;
 }
+/* Mobile & Tablet Responsiveness */
+@media screen and (max-width: 1024px) {
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hidden by default, will toggle via JS */
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .btn-resume {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding-top: 8rem;
+    text-align: center;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .mini-card {
+    position: static;
+    margin: 1rem auto 0;
+  }
+
+  .profile-wrap {
+    margin-bottom: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-title { font-size: 2rem; }
+  .hero-lead { font-size: 1rem; }
+  .skill-top strong { font-size: 0.9rem; }
+  .bar { height: 8px; }
+  .project-card h3 { font-size: 1.2rem; }
+  .btn { padding: 0.5rem 1rem; font-size: 0.9rem; }
+  .about-actions .btn { width: 100%; }
+}
 

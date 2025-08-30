@@ -266,4 +266,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     });
 });
 
+// Close mobile menu on nav link click
+document.querySelectorAll('.nav-list a').forEach(link => {
+  link.addEventListener('click', () => {
+    if(navList.classList.contains('active')){
+      navList.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', false);
+    }
+  });
+});
 
